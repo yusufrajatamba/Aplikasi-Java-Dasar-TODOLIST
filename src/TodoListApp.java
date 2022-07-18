@@ -26,6 +26,7 @@ public class TodoListApp {
         model[0] = "belajar Java Dasar";
         model[1] = "membuat Aplikasi TodoList";
         model[2] = "ini yang akan dihapus";
+        model[3]  = "ini data ke empat";
         showTodoList();
     }
 
@@ -85,9 +86,18 @@ public class TodoListApp {
             return false;
         }
         else {
-            model[posisi-1] =null;
+           // model[posisi-1] =null;
+
+            for (int i=posisi-1;i< model.length;i++){
+                if(i== model.length-1){
+                    model[i]=null;
+                }else
+                model[i] = model [i+1];
+            }
             return true;
         }
+
+
 
         /*
         for(var i=0 ; i< model.length; i++){
@@ -98,17 +108,14 @@ public class TodoListApp {
         }
         */
 
-
     }
 
     public static void testremoveTodoList (){
         testShowTodoList();
-        var result = removeTodoList(2);
+        var result = removeTodoList(3);
         System.out.println(result);
         showTodoList();
-        result = removeTodoList(3);
-        System.out.println(result);
-        showTodoList();
+
     }
 
     //---------------------------
