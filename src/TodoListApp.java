@@ -4,7 +4,9 @@ public class TodoListApp {
 
     public static void main(String[] args) {
 
-        testShowTodoList();
+       // testShowTodoList();
+
+        testremoveTodoList();
     }
 
     //method menampilkan todolist
@@ -23,6 +25,7 @@ public class TodoListApp {
     public static void testShowTodoList (){
         model[0] = "belajar Java Dasar";
         model[1] = "membuat Aplikasi TodoList";
+        model[2] = "ini yang akan dihapus";
         showTodoList();
     }
 
@@ -62,12 +65,51 @@ public class TodoListApp {
         }
     }
 
-
-    //menghapus todoList
-    public static void removeTodoList(){
+    public static void testaddTodoList (){
+        for(var i=0;i< 25;i++){
+            addTodoList("contoh ke ." +i);
+        }
+        showTodoList();
 
     }
 
+
+    //menghapus todoList
+    public static boolean removeTodoList(int posisi){
+
+        if(posisi-1 > model.length){
+            return false;
+
+        }
+        if(model[posisi-1]==null){
+            return false;
+        }
+        else {
+            model[posisi-1] =null;
+            return true;
+        }
+
+        /*
+        for(var i=0 ; i< model.length; i++){
+            if(i==posisi-1){
+                model[i] = null;
+                break;
+            }
+        }
+        */
+
+
+    }
+
+    public static void testremoveTodoList (){
+        testShowTodoList();
+        var result = removeTodoList(2);
+        System.out.println(result);
+        showTodoList();
+        result = removeTodoList(3);
+        System.out.println(result);
+        showTodoList();
+    }
 
     //---------------------------
 
