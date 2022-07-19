@@ -1,10 +1,12 @@
+
 public class TodoListDuplicat {
 
     public static String [] data = new String[10];
+     public static java.util.Scanner scan = new java.util.Scanner(System.in );
 
     public static void main(String[] args) {
 
-    testdeleteTodoListduplicat();
+    viewShowTodoList();
     }
     public static void showTodoListduplicat (){
 
@@ -70,11 +72,65 @@ public class TodoListDuplicat {
         testshowTodoListduplicat();
     }
 
-    public static void input (){
+    public static String input(String data){
 
+        System.out.print(data +":");
+        var input = scan.nextLine();
+
+        return input;
+    }
+    public static void testinput(){
+
+        var data =input("Masukkan Nama");
+        System.out.println("Hi "+ data);
+        addTodoListDuplicat(data);
+        showTodoListduplicat();
+    }
+
+    public static void viewShowTodoList (){
+        while(true){
+            System.out.println(" TODOLIST Anda");
+
+            showTodoListduplicat();
+            System.out.println("Menu :");
+            System.out.println("1. Tambah");
+            System.out.println("2. Hapus");
+            System.out.println("x. Stop Program");
+            var data = input("Masukkan Pilihan" );
+            if(data.equals("1") ){
+                viewaddtodolist();
+            } else if (data.equals("2")) {
+                viewRemoveTodoList();
+            } else if (data.equals("x")) {
+                break;
+            }else {
+                System.out.println("System tidak mengenal input");
+            }
+
+        }
+    }
+    public static void viewaddtodolist (){
+
+        System.out.println("Menambahkan Todo ");
+        var data = input("Todo (x = batal)");
+
+        if(data.equals("x")){
+
+        }else
+        addTodoListDuplicat(data);
+    }
+    public static void viewRemoveTodoList (){
+        System.out.println("Remove data Todo");
+        var data = input("Todo (x = batal) ");
+
+        if(data.equals("x")){
+
+        }else{
+           deleteTodoListduplicar(Integer.valueOf(data));
+        }
+    }
     }
 
 
 
 
-}
