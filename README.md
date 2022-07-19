@@ -5,7 +5,7 @@ Penjelasan Aplikasi Java Dasar TODOLIST
 
 Mentor  : Eko Kurniawan Khannedy
 
-[Prototyp Aplikasi TodoList](https://xd.adobe.com/view/b0d73a96-5829-4dd7-b8df-ad04cd972212-e584/)
+[Prototype Aplikasi TodoList](https://xd.adobe.com/view/b0d73a96-5829-4dd7-b8df-ad04cd972212-e584/)
 
 **Kenapa Butuh Prototype?**
 
