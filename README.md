@@ -4,6 +4,7 @@ Penjelasan Aplikasi Java Dasar TODOLIST
 @author : Yusuf Raja Tamba
 
 Mentor  : Eko Kurniawan Khannedy
+[Link youtube](https://www.youtube.com/watch?v=CSGlYkknhUs&list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX&index=2)
 
 [Prototype Aplikasi TodoList](https://xd.adobe.com/view/b0d73a96-5829-4dd7-b8df-ad04cd972212-e584/)
 
