@@ -1,12 +1,12 @@
 public class TodoListApp {
 
     public static String [] model = new String[10];
-
+    public static java.util.Scanner scanner = new java.util.Scanner(System.in );
     public static void main(String[] args) {
 
        // testShowTodoList();
 
-        testremoveTodoList();
+        testInput();
     }
 
     //method menampilkan todolist
@@ -27,6 +27,7 @@ public class TodoListApp {
         model[1] = "membuat Aplikasi TodoList";
         model[2] = "ini yang akan dihapus";
         model[3]  = "ini data ke empat";
+        model[4] = "ini nomor 5";
         showTodoList();
     }
 
@@ -112,17 +113,52 @@ public class TodoListApp {
 
     public static void testremoveTodoList (){
         testShowTodoList();
-        var result = removeTodoList(3);
+        var result = removeTodoList(25);
         System.out.println(result);
         showTodoList();
-
+        result = removeTodoList(2);
+        System.out.println(result);
+        showTodoList();
     }
 
+    public static String input (String info){
+
+    System.out.print(info + ": ");
+    String data = scanner.nextLine();
+    return data;
+    }
+
+    public static void testInput (){
+        var name = input("Nama");
+        System.out.println("Hi " + name);
+        var channel = input ("Channel");
+        System.out.print("Hi " + channel);
+    }
     //---------------------------
 
     //Dibawah ini adalah view dari menampilkan todolist
     public static void viewShowTodoList (){
+    while (true){
+        showTodoList();
+        System.out.println("Menu :");
+        System.out.println("1. Tambah");
+        System.out.println("2. Hapus");
+        System.out.println("x. Keluar");
 
+        var input = input("Pilih");
+        if(input.equals("1")){
+            viewAddTodoList();
+        }
+        else if (input.equals("2")){
+            viewRemoveTodoList();
+        } else if (input.equals("x")) {
+            break;
+
+        } else {
+            System.out.println("Pilihan Tidak dimengerti");
+        }
+
+    }
     }
 
     //Dibawah ini adalah view dari menambahkan todolist
