@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class TodoListApp {
 
     public static String [] model = new String[10];
@@ -6,7 +8,7 @@ public class TodoListApp {
 
        // testShowTodoList();
 
-        testInput();
+        viewShowTodoList();
     }
 
     //method menampilkan todolist
@@ -23,11 +25,6 @@ public class TodoListApp {
     //untuk melakukan test
 
     public static void testShowTodoList (){
-        model[0] = "belajar Java Dasar";
-        model[1] = "membuat Aplikasi TodoList";
-        model[2] = "ini yang akan dihapus";
-        model[3]  = "ini data ke empat";
-        model[4] = "ini nomor 5";
         showTodoList();
     }
 
@@ -139,7 +136,8 @@ public class TodoListApp {
     //Dibawah ini adalah view dari menampilkan todolist
     public static void viewShowTodoList (){
     while (true){
-        showTodoList();
+        System.out.println("TODOLIST");
+        testShowTodoList();
         System.out.println("Menu :");
         System.out.println("1. Tambah");
         System.out.println("2. Hapus");
@@ -161,13 +159,48 @@ public class TodoListApp {
     }
     }
 
+    public static void testViewTodoList (){
+        viewShowTodoList();
+    }
+
     //Dibawah ini adalah view dari menambahkan todolist
     public static void viewAddTodoList (){
+        System.out.println("Menambah TodoList");
 
+        var todo  =input("Todo (x Jika Batal)");
+
+        if(todo.equals("x")){
+            //batal
+        }else {
+            addTodoList(todo);
+        }
+
+    }
+
+    public static void testViewaddTodoList (){
+        viewAddTodoList();
+        showTodoList();
     }
 
     //Dibawah ini adalah view dari menghapus todolist
     public static void viewRemoveTodoList (){
+        System.out.println("menghapus TodoList");
+        var number  =input("Todo (x Jika Batal)");
 
+        if(number.equals("x")){
+            //batal
+        }else{
+           boolean succes = removeTodoList(Integer.valueOf(number));
+           if(!succes){
+               System.out.println("Gagal Menghapus Todolist :" + number);
+           }
+        }
+    }
+
+    public static void testRemoveviewTodoList (){
+        testShowTodoList();
+        viewRemoveTodoList();
+
+        showTodoList();
     }
 }

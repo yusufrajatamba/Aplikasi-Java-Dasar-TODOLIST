@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="934a13ab-ea30-4936-9656-1be6820e67a9" name="Changes" comment="add,remove data">
+    <list default="true" id="934a13ab-ea30-4936-9656-1be6820e67a9" name="Changes" comment="add view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TodoListApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListApp.java" afterDir="false" />
     </list>
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658138416574</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add view">
+      <created>1658213367661</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658213367661</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +145,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update" />
     <MESSAGE value="add,remove data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add,remove data" />
+    <MESSAGE value="add view" />
+    <option name="LAST_COMMIT_MESSAGE" value="add view" />
   </component>
 </project>
