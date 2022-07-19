@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="934a13ab-ea30-4936-9656-1be6820e67a9" name="Changes" comment="add view">
+    <list default="true" id="934a13ab-ea30-4936-9656-1be6820e67a9" name="Changes" comment="Aplikasi Complete">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoListApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658213367661</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Aplikasi Complete">
+      <created>1658215384500</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658215384500</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +153,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="add,remove data" />
     <MESSAGE value="add view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add view" />
+    <MESSAGE value="Aplikasi Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aplikasi Complete" />
   </component>
 </project>
